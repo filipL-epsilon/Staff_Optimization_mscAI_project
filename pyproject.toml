@@ -5,6 +5,7 @@ requires-python = ">=3.12"
 dependencies = [
     "gurobipy>=13.0.3",
     "ipykernel>=7.4.0",
+    "jupyter>=1.1.1",
     "matplotlib>=3.11.2",
     "numpy>=2.5.4",
     "pandas>=3.1.0",
