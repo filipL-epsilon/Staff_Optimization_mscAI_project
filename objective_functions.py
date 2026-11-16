@@ -1,3 +1,6 @@
+import gurobipy as gp
+from gurobipy import GRB
+
 # Project brief specifies:
 # 1) Maximize total profit realized
 # 2) Minimize the actual project execution time
@@ -18,17 +21,10 @@ def objective_execution_time(m,e):
     m.addConstr(M == gp.max_(list(e.values())))
     return M
 
-def objective_projects_per_employee(m,x):
+def objective_projects_per_employee(m, z, S, J):
     # sum over projects and employees worked
 
-    # first check if employee 'i' works on project 'j'
-    z = m.addVars(S, J, vtype=GRB.BINARY, name="project_worked")
-    for i in S:
-        for j in J:
-            m.addGenConstrOr( # this sets z[i,j] to 1 if any of the x[..] are 1s for any day/project
-                z[i,j],
-                [x[i,t,j,k] for t in H for k in Q if (i,t,j,k) in x]
-            )
+    # introduce z from auxiliary_constraints
 
     # define a new variable that will hold the max no. projects worked on by any employee
     P = m.addVar(name = "max_projects")
@@ -39,15 +35,8 @@ def objective_projects_per_employee(m,x):
 
     return P
 
-def objective_projects_late(m,l):
+def objective_projects_late(r, J):
     # return no. of projects that are late
 
-    # define variable r[j] to hold 0 if not late, 1 if late
-    r = m.addVars(J, vtype=GRB.BINARY, name="late")
-
-    # the constraints are = 0 if l[j] is zero, =1 if l[j] is positive
-    for j in J:
-        m.addGenConstrIndicator(r[j], 0, l[j] == 0)
-        m.addGenConstrIndicator(r[j], 1, l[j] > 0)
-
+    # r[j] is defined in auxiliary_constraints.py
     return gp.quicksum(r[j] for j in J)
