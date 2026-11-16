@@ -117,6 +117,4 @@ def add_auxiliary_constraints(m, x, S, J, H, Q_j, n, d):
                     name=f"no_participation_{i}_{j}"
                 )
 
-
-    return y, e, f, l, r
-
+    return y, e, f, l, r, z
