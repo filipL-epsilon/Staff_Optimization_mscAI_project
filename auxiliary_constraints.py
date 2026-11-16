@@ -71,8 +71,19 @@ def add_auxiliary_constraints(m, x, S, J, H, Q_j, n, d):
     # binary variable for lateness, 0 or 1
     l = m.addVars(J, lb=0, vtype=GRB.INTEGER, name="lateness")
 
+    # diffence between completion day and the due date
+    delay = m.addVars(J, lb=-GRB.INFINITY, vtype=GRB.INTEGER, name="delay")
+
     for j in J:
-        m.addConstr(l[j] >= e[j] - d[j])
+        m.addConstr(
+            # if the project finished early, delay is negative
+            delay[j] == e[j] - d[j],
+            name=f"delay_diff_{j}"
+        )
+
+        # final lateness: Math.max(0, delay[j])
+        # 2nd paramete: vars – (list or iterable of Var) The variables over which the MAX will be taken.
+        m.addGenConstrMax(l[j], [delay[j]], constant=0, name=f"final_lateness_{j}")
 
     
     # binary late project indicator, 0 or 1
