@@ -1,2 +1,10 @@
-# data
-data
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Virtual environment
+.venv/
+
+# Data
+data/
