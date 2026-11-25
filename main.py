@@ -2,7 +2,7 @@ from model_solvers.solver_single import solver_single
 from model_solvers.solver_epsilon_2D import solver_epsilon_2D
 from model_analysis.save_results import save_results
 
-data_path = "data/medium_instance.json"
+data_path = "data/large_instance.json"
 
 def main():
     # m, results = solver_single(data_path)

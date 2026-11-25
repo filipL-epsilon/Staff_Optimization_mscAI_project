@@ -17,6 +17,9 @@ def solver_epsilon_2D(path, secondary_objective="execution_time"):
     # 2. Model
     m = gp.Model("solver_epsilon_2D")
 
+    m.Params.TimeLimit = 60   # max 60 seconds per run
+    m.Params.MIPGap = 0.03    # stop if profit gap within 3%
+
     # 3. Variables
     x, y, e, l, last_day, z, P, r, idx = create_variables(
         m, H, Q, S, J, Q_i, V_i, Q_j, h
