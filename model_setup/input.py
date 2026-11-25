@@ -2,7 +2,7 @@ import json
 
 def load_inputs(path):
 
-    with open("data/toy_instance.json") as f:
+    with open(path) as f:
         inst = json.load(f)
 
     # Sets

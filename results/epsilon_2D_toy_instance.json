@@ -1,0 +1,134 @@
+{
+    "execution_time": [
+        {
+            "epsilon": 0,
+            "profit": 0.0,
+            "execution_time": 0.0,
+            "projects_per_employee": 0,
+            "late_projects": 0.0
+        },
+        {
+            "epsilon": 1,
+            "profit": 10.0,
+            "execution_time": 1.0,
+            "projects_per_employee": 1,
+            "late_projects": 0.0
+        },
+        {
+            "epsilon": 2,
+            "profit": 20.0,
+            "execution_time": 2.0,
+            "projects_per_employee": 1,
+            "late_projects": 0.0
+        },
+        {
+            "epsilon": 3,
+            "profit": 40.0,
+            "execution_time": 3.0,
+            "projects_per_employee": 2,
+            "late_projects": 0.0
+        },
+        {
+            "epsilon": 4,
+            "profit": 55.0,
+            "execution_time": 4.0,
+            "projects_per_employee": 3,
+            "late_projects": 0.0
+        },
+        {
+            "epsilon": 5,
+            "profit": 65.0,
+            "execution_time": 5.0,
+            "projects_per_employee": 4,
+            "late_projects": 0.0
+        }
+    ],
+    "projects_per_employee": [
+        {
+            "epsilon": 0,
+            "profit": 0.0,
+            "execution_time": 5.0,
+            "projects_per_employee": 0,
+            "late_projects": 0.0
+        },
+        {
+            "epsilon": 1,
+            "profit": 42.0,
+            "execution_time": 5.0,
+            "projects_per_employee": 1,
+            "late_projects": 1.0
+        },
+        {
+            "epsilon": 2,
+            "profit": 65.0,
+            "execution_time": 5.0,
+            "projects_per_employee": 2,
+            "late_projects": 0.0
+        },
+        {
+            "epsilon": 3,
+            "profit": 65.0,
+            "execution_time": 5.0,
+            "projects_per_employee": 2,
+            "late_projects": 0.0
+        },
+        {
+            "epsilon": 4,
+            "profit": 65.0,
+            "execution_time": 5.0,
+            "projects_per_employee": 2,
+            "late_projects": 0.0
+        },
+        {
+            "epsilon": 5,
+            "profit": 65.0,
+            "execution_time": 5.0,
+            "projects_per_employee": 2,
+            "late_projects": 0.0
+        }
+    ],
+    "late_projects": [
+        {
+            "epsilon": 0,
+            "profit": 65.0,
+            "execution_time": 5.0,
+            "projects_per_employee": 4,
+            "late_projects": 0.0
+        },
+        {
+            "epsilon": 1,
+            "profit": 65.0,
+            "execution_time": 5.0,
+            "projects_per_employee": 4,
+            "late_projects": 0.0
+        },
+        {
+            "epsilon": 2,
+            "profit": 65.0,
+            "execution_time": 5.0,
+            "projects_per_employee": 4,
+            "late_projects": 0.0
+        },
+        {
+            "epsilon": 3,
+            "profit": 65.0,
+            "execution_time": 5.0,
+            "projects_per_employee": 4,
+            "late_projects": 0.0
+        },
+        {
+            "epsilon": 4,
+            "profit": 65.0,
+            "execution_time": 5.0,
+            "projects_per_employee": 4,
+            "late_projects": 0.0
+        },
+        {
+            "epsilon": 5,
+            "profit": 65.0,
+            "execution_time": 5.0,
+            "projects_per_employee": 4,
+            "late_projects": 0.0
+        }
+    ]
+}

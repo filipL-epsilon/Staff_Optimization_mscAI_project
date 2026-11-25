@@ -4,7 +4,6 @@ import json
 import gurobipy as gp
 from gurobipy import GRB
 
-### TO ADD IMPORTS FOR INPUTS, VARIABLES, CONSTRAINTS -- WHEN TEAM IS DONE ###
 from model_setup.input import load_inputs
 from model_setup.variables import create_variables
 from model_setup.constraints import add_constraints
