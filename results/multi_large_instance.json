@@ -1,0 +1,104 @@
+{
+    "profit_only": {
+        "weights": {
+            "profit": 1,
+            "execution_time": 0,
+            "projects_per_employee": 0,
+            "late_projects": 0
+        },
+        "runtime": 5.337000131607056,
+        "status": "Optimal within tolerance",
+        "has_solution": true,
+        "profit": 817.0,
+        "execution_time": 36,
+        "projects_per_employee": 11,
+        "late_projects": 2,
+        "weighted_score": 0.8009803921568628,
+        "weighted_gap": 0.009791921664633716
+    },
+    "profit_emphasis": {
+        "weights": {
+            "profit": 4,
+            "execution_time": 1,
+            "projects_per_employee": 1,
+            "late_projects": 1
+        },
+        "runtime": 60.09700012207031,
+        "status": "Time limit",
+        "has_solution": true,
+        "profit": 765.0,
+        "execution_time": 31,
+        "projects_per_employee": 5,
+        "late_projects": 0,
+        "weighted_score": 1.938888888888889,
+        "weighted_gap": 0.14222532256440573
+    },
+    "equal_weights": {
+        "weights": {
+            "profit": 1,
+            "execution_time": 1,
+            "projects_per_employee": 1,
+            "late_projects": 1
+        },
+        "runtime": 60.19599986076355,
+        "status": "Time limit",
+        "has_solution": true,
+        "profit": 0.0,
+        "execution_time": 0,
+        "projects_per_employee": 0,
+        "late_projects": 0,
+        "weighted_score": -0.0,
+        "weighted_gap": null
+    },
+    "time_emphasis": {
+        "weights": {
+            "profit": 1,
+            "execution_time": 4,
+            "projects_per_employee": 1,
+            "late_projects": 1
+        },
+        "runtime": 0.5889999866485596,
+        "status": "Optimal within tolerance",
+        "has_solution": true,
+        "profit": 0.0,
+        "execution_time": 0,
+        "projects_per_employee": 0,
+        "late_projects": 0,
+        "weighted_score": -0.0,
+        "weighted_gap": 0.0
+    },
+    "workload_emphasis": {
+        "weights": {
+            "profit": 1,
+            "execution_time": 1,
+            "projects_per_employee": 4,
+            "late_projects": 1
+        },
+        "runtime": 9.625999927520752,
+        "status": "Optimal within tolerance",
+        "has_solution": true,
+        "profit": 0.0,
+        "execution_time": 0,
+        "projects_per_employee": 0,
+        "late_projects": 0,
+        "weighted_score": -0.0,
+        "weighted_gap": 0.0
+    },
+    "lateness_emphasis": {
+        "weights": {
+            "profit": 1,
+            "execution_time": 1,
+            "projects_per_employee": 1,
+            "late_projects": 4
+        },
+        "runtime": 60.115999937057495,
+        "status": "Time limit",
+        "has_solution": true,
+        "profit": 0.0,
+        "execution_time": 0,
+        "projects_per_employee": 0,
+        "late_projects": 0,
+        "weighted_score": -0.0,
+        "weighted_gap": null
+    }
+}
